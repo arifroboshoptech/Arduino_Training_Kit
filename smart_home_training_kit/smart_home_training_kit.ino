@@ -296,11 +296,7 @@ void loop() {
   digitalWrite(BUZZER, HIGH);
   delay(3000);
   }
-  if(read_ldr < 5){
-  Serial.println("LDR value :" + String(read_ldr));
-  digitalWrite(led_10, HIGH);
-  delay(3000);
-  }
+
   if(read_rain < 600){
   Serial.println("Rain value :" + String(read_rain));
   servo1.write(0);
@@ -330,6 +326,11 @@ void loop() {
       motion_state = HIGH;      
     }
   } 
+  if(read_ldr < 5){
+  Serial.println("LDR value :" + String(read_ldr));
+  digitalWrite(led_10, HIGH);
+  delay(3000);
+  }
 
 
 
