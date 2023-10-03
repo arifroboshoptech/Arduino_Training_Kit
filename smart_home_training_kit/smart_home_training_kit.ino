@@ -279,7 +279,7 @@ void loop() {
    //Serial.println("Temperature:" + String(t));
    //Serial.println("Humidity:" + String(h));
    lcd.setCursor(0,0);
-   lcd.print("Temperature : " + String(t)+"C");
+   lcd.print("Temp : " + String(t)+"C");
    lcd.setCursor(0,1);
    lcd.print("Humidity : " + String(h)+"%");
   
